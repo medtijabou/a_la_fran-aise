@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+  
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .food-card img {
+      height: 380px;
+      z-index: 1;
+    }
+  
+    footer {
+      display: flex;
+      text-align: center;
+      flex-direction: row-reverse;
+  
+      h5 {
+        width: 15%;
+        padding-top: 0;
+      }
+  
+      ul {
+        display: flex;
+        column-gap: 20px;
+        justify-content: end;
+      }
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .menu-card {
+      max-width: 1000px;
+      margin: auto;
+    }
+  }
+  

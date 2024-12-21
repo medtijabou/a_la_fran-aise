@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    padding: 20px 10px 10px 20px;
+    width: auto;
+  
+    .log-site {
+      width: 90%;
+  
+      img {
+        margin-left: 33%;
+        width: 150px;
+      }
+    }
+  }
+  
+  footer {
+    width: 100%;
+    background: #333;
+    padding: 20px 0;
+  
+    h5 {
+      font-family: $font-family-heading;
+      font-weight: bold;
+      font-style: italic;
+      color: #fff;
+      margin: auto;
+      padding-top: 10px;
+      width: 90%;
+      font-size: 18px;
+    }
+  
+    ul {
+      width: 90%;
+      color: #fff;
+      margin: auto;
+      font-size: 16px;
+  
+      li a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+  
