@@ -66,7 +66,6 @@ header {
 .food-card img {
   width: 100%;
   object-fit: cover;
-  position: relative;
 }
 
 .menu-card {
@@ -78,7 +77,8 @@ header {
 }
 
 .title-menu h1 {
-  font-family: "Shrikhand, cursive";
+ 
+  font-family: "Shrikhand", cursiv;
   padding-top: 15px;
   padding-left: 15px;
 }
@@ -87,7 +87,6 @@ header {
   font-size: 30px;
   -webkit-text-stroke: white 1px;
   position: absolute;
- 
   top: 22px;
   right: 20px;
   transition: opacity 1s;
@@ -100,6 +99,7 @@ header {
   top: 13px;
   right: 20px;
   -webkit-text-fill-color: transparent;
+  position: absolute;
  
 }
 .logo-love i.logo-love-sytle:hover, .logo-love-sytle.logo-love-sytle:hover {
@@ -237,7 +237,7 @@ footer ul li a {
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   header{
     padding: 25px 0px 25px 0px;
   }
@@ -257,18 +257,28 @@ footer ul li a {
     height: 380px;
     z-index: 1;
   }
-  .title-menu h1 {
+  
+  .title-menu  {
     display: flex;
     justify-content: center;
+   
+  }
+  .title-menu h1{
+position: relative;
+   
+    font-size: 28px;
+
   }
   .logo-love i, .logo-love-sytle {
-    right: 330Px;
+
+    left: 640Px;
     top: 22px;
 
   }
   .logo-love i.logo-love-sytle, .logo-love-sytle.logo-love-sytle{
-    right: 330Px;
+    left: 640Px;
     top: 13px;
+   
   }
   .menu__entrees{
     padding: 0px 10% 0px 10%;
