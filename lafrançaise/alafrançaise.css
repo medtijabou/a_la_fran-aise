@@ -117,6 +117,7 @@ header {
   margin-bottom: 1.25rem;
   font-weight: 300;
   font-size: 16px;
+  position: relative;
 }
 .underline-title::after {
   background: #99E2D0;
@@ -124,9 +125,15 @@ header {
   content: "";
   display: block;
   height: 0.1875rem;
-  position: relative;
-  width: 2.5rem;
+  position: absolute;
+  width :2.5rem;
+  transition: width 500ms linear;
+ 
 }
+.underline-title:hover:after  {
+  width: 7rem;
+}
+
 
 .menu {
   padding: 0.75rem;
@@ -209,13 +216,14 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
+/**footer**/
 footer {
   width: 100%;
   background: #333;
   padding: 20px 0;
 }
 footer h4 {
-  font-family: "Shrikhand, cursive";
+  font-family: "Shrikhand", cursiv;
   font-weight: bold;
   font-style: italic;
   color: #fff;
@@ -291,6 +299,7 @@ position: relative;
   footer h4 {
     width: 15%;
     padding-top: 0;
+   
   }
   footer ul {
     display: flex;
