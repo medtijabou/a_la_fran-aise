@@ -171,13 +171,13 @@ header {
 }
  /* hover active */
   
- .menu:active {
+ .menu:focus {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
-.menu:active .menu__select {
+.menu:focus .menu__select {
   margin: -0.75rem -1.1rem -0.75rem 1rem;
 }
-.menu:active i {
+.menu:focus i {
   transform: rotate(360deg);
 }
 
