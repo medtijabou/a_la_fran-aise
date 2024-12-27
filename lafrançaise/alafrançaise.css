@@ -161,20 +161,14 @@ header {
 
 }
 
- /* hover active */
-  
- @media (hover: none) and (pointer: coarse) {
-  .menu:active {
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Appliquer au toucher */
-  }
-
-  .menu:active .menu__select {
-    margin: -0.75rem -1.1rem -0.75rem 1rem; /* Déplacement des marges */
-  }
-
-  .menu:active i {
-    transform: rotate(360deg); /* Rotation de l'icône */
-  }
+.menu:hover {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+.menu:hover .menu__select {
+  margin: -0.75rem -1.1rem -0.75rem 1rem;
+}
+.menu:hover i {
+  transform: rotate(360deg);
 }
 
 .menu .menu__info {
@@ -299,15 +293,7 @@ position: relative;
   .menu__entrees{
     padding: 0px 10% 0px 10%;
   }
-  .menu:hover {
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-  }
-  .menu:hover .menu__select {
-    margin: -0.75rem -1.1rem -0.75rem 1rem;
-  }
-  .menu:hover i {
-    transform: rotate(360deg);
-  }
+  
   footer {
     display: flex;
     text-align: center;
