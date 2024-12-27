@@ -176,11 +176,10 @@ header {
     transform: rotate(360deg);
   }
 }
-
-/* Optionnel : Réinitialisation de l'effet au clic sur un autre élément */
-.menu {
-  outline: none; /* Supprimer le contour par défaut si nécessaire */
+.menu:active {
+  transform: scale(0.98);
 }
+
 
 
 
