@@ -159,17 +159,30 @@ header {
     transform: scale(1);
   }
 
+}@media (hover: none) and (pointer: coarse) {
+  .menu {
+    cursor: pointer;
+  }
+
+  .menu:focus {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Équivalent au hover */
+  }
+
+  .menu:focus .menu__select {
+    margin: -0.75rem -1.1rem -0.75rem 1rem;
+  }
+
+  .menu:focus i {
+    transform: rotate(360deg);
+  }
 }
 
-.menu:hover {
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+/* Optionnel : Réinitialisation de l'effet au clic sur un autre élément */
+.menu {
+  outline: none; /* Supprimer le contour par défaut si nécessaire */
 }
-.menu:hover .menu__select {
-  margin: -0.75rem -1.1rem -0.75rem 1rem;
-}
-.menu:hover i {
-  transform: rotate(360deg);
-}
+
+
 
 .menu .menu__info {
   white-space: nowrap;
@@ -293,7 +306,15 @@ position: relative;
   .menu__entrees{
     padding: 0px 10% 0px 10%;
   }
-  
+  .menu:hover {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  }
+  .menu:hover .menu__select {
+    margin: -0.75rem -1.1rem -0.75rem 1rem;
+  }
+  .menu:hover i {
+    transform: rotate(360deg);
+  }
   footer {
     display: flex;
     text-align: center;
