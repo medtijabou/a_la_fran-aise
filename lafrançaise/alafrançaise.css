@@ -169,6 +169,18 @@ header {
 .menu:hover i {
   transform: rotate(360deg);
 }
+ /* hover active */
+  
+ .menu:active {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+.menu:active .menu__select {
+  margin: -0.75rem -1.1rem -0.75rem 1rem;
+}
+.menu:active i {
+  transform: rotate(360deg);
+}
+
 .menu .menu__info {
   white-space: nowrap;
   overflow: hidden;
@@ -305,17 +317,6 @@ position: relative;
     display: flex;
     column-gap: 20px;
     justify-content: end;
-  }
-  /* hover active */
-  
-  .menu:focus {
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-  }
-  .menu:focus .menu__select {
-    margin: -0.75rem -1.1rem -0.75rem 1rem;
-  }
-  .menu:focus i {
-    transform: rotate(360deg);
   }
 }
 
